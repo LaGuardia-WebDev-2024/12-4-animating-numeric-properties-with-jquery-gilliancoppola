@@ -9,8 +9,9 @@
 
     <button id="button1">Grow Larger</button>
     <button id="button2">Grow Smaller</button>
-    <button id="button3">Animation 3</button>
-    <button id="button4">Animation 4</button>
+    <button id="button3">Move Right</button>
+    <button id="button4">Move Left/Down</button>
+    <button id="button5">Return to start</button>
 
     <div class="avatar">
       <img
@@ -26,21 +27,59 @@
       // ======================== Button #1
       $("#button1").click(function () {
        
+       $(".avatar").animate({
+        width: "400px",
+       });
+
+       $("img").animate({
+        width: "250px",
+       });
+
       });
 
       // ======================== Button #2
       $("#button2").click(function () {
-     
+     $(".avatar").animate({
+        width: "250px",
+       });
+
+       $("img").animate({
+        width: "150px",
+       });
+
       });
 
       // ======================== Button #3
       $("#button3").click(function () {
-    
+    $(".avatar").animate({
+        marginLeft: "500px",
+       });
       });
 
-       // ======================== Button #3
+       // ======================== Button #4
       $("#button4").click(function () {
-    
+    $(".avatar").animate({
+        marginLeft: "0px",
+        marginTop: "400px",
+        
+       });
+
+      });
+
+
+      // ======================== Button #5
+      $("#button5").click(function () {
+     $(".avatar").animate({
+        width: "250px",
+        marginTop: "0px",
+        marginLeft:"0px",
+       });
+
+       $("img").animate({
+        width: "150px",
+       });
+
+
       });
     
     
